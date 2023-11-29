@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-base font-medium ;
+    font-family: 'Noto Sans TC', sans-serif;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  h2{
+    @apply text-l font-bold ;
+  }
+  h3{
+    @apply text-l 
+  }
+  h4{
+    @apply text-m font-bold ;
+  }
+
+  img {
+	  object-fit:cover;
+  }
+
+}
+
+
+
+
+
+@layer utilities{
+
+  .mapbackground{
+    background-image: url("../assets/background.png");
+    width: 100%;
+    background-color: rgba(0,0,0,.05);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -999;
+  }
+}
+.cls-1 {
+        fill: #ebc80f;
+      }
+
+.cls-2 {
+  fill: #6f66dc;
+}
+
+.cls-3 {
+  fill: #fff;
+  stroke: #aaa;
+  stroke-linejoin: round;
+}
+.hoverColor{
+  stroke: black;
+  stroke-width: 2px;
+}
